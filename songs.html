@@ -6,28 +6,196 @@
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>22 - Songs</title>
      <link rel="stylesheet" href="./css/songs.css">
+     <script src="./vendor/gsap/TweenMax.min.js" type="text/javascript"></script>
+     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
-     <p>교수님 ..  죄송합니다 . .. 시간을 쓴거에 비해 정말 결과물이 너무 안나오네요 . ..ㅠㅠ
-        남은기간동안 인프만을 위해 열심히 하겠습니다 ... .... 
-     </p>
-     <div id="song" class="song">
-          <div class="view">
-               <div class="view-container">
-               <!-- 항목을 구성 -->
-               <div class="view-item"><img src="./img/1.png"></div>
+<!--left box-->
+<div id="left-box" class="section2">
+          <span id="ep"><b>2015</b> Hyuk Oh Second Ep Album</span>
+
+          <ul id="menu">
+               <li><a href="./index.html"><b>MAIN</b></a></li>
+               <li><a href="./album.html" >ALBUM</a></li>
+               <li><a href="./songs.html" >SONGS</a></li>
+               <li><a href="./art.html">ART</a></li>
+               <li><a href="./members.html">MEMBERS</a></li>
+          </ul>
+          <span id="lefttxt">
+               우리는 어떤 꿈을 가지고 여기에 모여 사는가.<br>
+               비록 곰팡내 나는 원룸 한구석에서 동물원 우리에 <br>
+               갇힌 개미핥기처럼 몸을 웅크리고 살지라도 <br>
+               각자 소망하는 바는 햇빛 가득 내리쬐는 <br>
+               더운 날의 갑작스런 소나기처럼 청량하기 그지없다.<br><br>
+
+               이번 앨범에서는 갑자기 소낙비가 퍼부을 때<br>
+               허둥지둥 대는 인파 사이로 홀로 우산도 쓰지 않고 <br>
+               온몸으로 쏟아져 내리는 빗줄기를 맞으며 <br>
+               길을 걸을 때의 단호한 상쾌함이 느껴진다.
+          </span>
+     </div>
+
+
+     <div id="gallery" class="gallery">
+          <div class="o">
+               <div class="o-container">
+                    <div class="o-item">
+                         <span class="circle" id="cir1">
+                              <audio src="./audio/1.mp3" id="audio1"></audio>
+                         <p>hover to play</p></span>
+                     </div>
+                     <div class="o-item">
+                         <span class="circle" id="cir2">
+                              <audio src="./audio/2.mp3" id="audio2"></audio>
+                         <p>hover to play</p></span>
+                    </div>
+                    <div class="o-item">
+                         <span class="circle" id="cir3">
+                              <audio src="./audio/3.mp3" id="audio3"></audio>
+                         <p>hover to play</p></span>
+                         </div>
+                    <div class="o-item">
+                         <span class="circle" id="cir4">
+                              <audio src="./audio/4.mp3" id="audio4"></audio>
+                         <p>hover to play</p></span>
+                    </div>
+                    <div class="o-item">
+                         <span class="circle" id="cir5">
+                              <audio src="./audio/5.mp3" id="audio5"></audio>
+                         <p>hover to play</p></span>
+                         </div>
+                    <div class="o-item">
+                         <span class="circle" id="cir6">
+                              <audio src="./audio/6.mp3" id="audio6"></audio>
+                         <p>hover to play</p></span>
+                    </div>
+                               
 
                </div>
           </div>
 
-          <ul class="list">
-               <li><a href="#" title="썸네일 1 버튼">Settled down</a></li><li>
-                    <a href="#" title="썸네일 2 버튼">wari gari</a></li><li>
-                    <a href="#" title="썸네일 3 버튼">big bird</a></li><li>
-                    <a href="#" title="썸네일 4 버튼">mer</a></li><li>
-                    <a href="#" title="썸네일 4 버튼">Hookah</a></li><li>
-                    <a href="#" title="썸네일 4 버튼">Gondry</a></li>
-          </ul>
+          <div class="back">
+               <div class="back-container">
+                    <div class="back-item"><img src="./img/1.png"></div>
+                    <div class="back-item"><img src="./img/2.png"></div>
+                    <div class="back-item"><img src="./img/3.png"></div>
+                    <div class="back-item"><img src="./img/4.png"></div>
+                    <div class="back-item"><img src="./img/5.png"></div>
+                    <div class="back-item"><img src="./img/6.png"></div>
+               </div>
+          </div>
+          <div class="cd">
+               <div class="cd-container">
+                    <div class="cd-item"><img src="./img/1.png"></div>
+                    <div class="cd-item"><img src="./img/2.png"></div>
+                    <div class="cd-item"><img src="./img/3.png"></div>
+                    <div class="cd-item"><img src="./img/4.png"></div>
+                    <div class="cd-item"><img src="./img/5.png"></div>
+                    <div class="cd-item"><img src="./img/6.png"></div>
+               </div>
+          </div> 
+          <div class="card">
+               <div class="card-container">
+                    <div class="view-card">
+                         <h2>track 01</h2>
+                         <h1>Settled Down ▶</h1>
+                         <p>
+                              작사 오혁 | 작곡 오혁,임동건 | 편곡 혁오
+                              <br><br>
+                              제목과는 달리 모순적이게도 정착하지 못하는<br>
+                              자신을 노래하는 1번 트랙 'Settled Down'<br>
+                              차분하면서도 개성있는 베이스 라인으로 시작해<br>
+                              약간의 긴장감을 주며 재미있게 곡을 풀어나간다.
+                         </p>
+                    </div>
+                    <div class="view-card">
+                         <h2>track 02</h2>
+                         <h1>Wari Gari ▶</h1>
+                         <p>
+                              작사 오혁 | 작곡 오혁 | 편곡 혁오
+                              <br><br>
+                              해외에 거주하던 어릴 적부터 서울에 자리 잡은<br>
+                              지금까지 반복되고 있는,<br>
+                              익숙해지려면 떠나가 버리는 사람들과 그 관계들이<br>
+                              부각된 2번 트랙 '와리가리 (Comes And Goes)'
+                         </p>
+                    </div>
+                    <div class="view-card">
+                         <h2>track 03</h2>
+                         <h1>Big Bird ▶</h1>
+                         <p>
+                              작사 오혁 | 작곡 오혁 | 편곡 혁오
+                              <br><br>
+                              밝은 멜로디와 분위기와는 반대로<br>
+                              가사는 일상에 무뎌진 사람들을 말하는 듯 하다.<br>
+                              반복에 반복, 그렇지만 나만이 아닌 모두가 그러고 있다는 사실.<br>
+                              내면의 목소리를 꺼내지 못하고 살아가는 사람들.
+                         </p>
+                    </div>
+                    <div class="view-card">
+                         <h2>track 04</h2>
+                         <h1>Mer ▶</h1>
+                         <p>
+                              작사 오혁 | 작곡 오혁 | 편곡 혁오
+                              <br><br>
+                              'Mer'는 불어로 '바다'를 뜻한다. <br>
+                              세상 더없이 깊은 심연과도 같은 바닷속으로<br>
+                              빨려 들어가듯 고요히 침잠하는 사랑을 노래하고 있다<br>
+                              지독하게 인간적이면서 낭만적이다. 
+                         </p>
+                    </div>
+                    <div class="view-card">
+                         <h2>track 05</h2>
+                         <h1>Hooka ▶</h1>
+                         <p>
+                              작사 오혁 | 작곡 오혁 | 편곡 혁오
+                              <br><br>
+                              멤버들이 가장 애착이 가는 넘버로 꼽은 5번 트랙 'Hooka'는 <br>
+                              크게 변화한 환경 속에서 그가 인간관계에 대해느낀 감정들이 담겨 있다. <br>
+                              이처럼 작동하지 않는 공동체로 인한 상처와 그로 인한 <br>
+                              삶의 공터를 채우고자 하는 열망은 음악적 실험으로 이어졌다. 
+                         </p>
+                    </div>
+                    <div class="view-card">
+                         <h2>track 06</h2>
+                         <h1>Gondry ▶</h1>
+                         <p>
+                              작사 오혁 | 작곡 오혁 | 편곡 혁오
+                              <br><br>
+                              프랑스의 영화감독 미셸 공드리(Michel Gondry)에 바치는 곡이다.<br>
+                              그의 영화 [이터널 선샤인]을 생각하며 단번에 써내려간<br>
+                              이 곡의 멜로디와 뮤직비디오 영상,<br>
+                              미쟝센은 그에 대한 오마주이기도 하다. <br>
+
+                         </p>
+                    </div>
+               </div>
+          </div>
      </div>
+
+
+        
+        
+          <div class="list-wrap">
+            <ul class="list">
+              <li class="selected"><a href="#" title="썸네일 1 버튼">01</a></li>
+              <li><a href="#" title="썸네일 1 버튼">02</a></li>
+              <li><a href="#" title="썸네일 1 버튼">03</a></li>
+              <br>
+              <li><a href="#" title="썸네일 1 버튼">04</a></li>
+              <li><a href="#" title="썸네일 1 버튼">05</a></li>
+              <li><a href="#" title="썸네일 1 버튼">06</a></li>
+            </ul>
+          </div>
+
+
+          <div id="cursor-bg">&nbsp;</div>
+          <div id="progress"><span>&nbsp;</span></div>
+
+        
+        <!-- 작성한 스크립트 앞에 코드를 작성. * -->
+        <script src = "./vendor/gsap/TweenMax.min.js"></script>
+        <script src="./js/songs.js" type="text/javascript"></script>
+        <script src="./js/mouse.js"></script>
 </body>
 </html>

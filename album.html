@@ -9,19 +9,17 @@
      <link rel="stylesheet" href="./css/album.css">
 </head>
 <body>
-
+     <!--left box-->
      <div id="left-box" class="section2">
           <span id="ep"><b>2015</b> Hyuk Oh Second Ep Album</span>
 
           <ul id="menu">
                <li><a href="./index.html"><b>MAIN</b></a></li>
-               <li><a href="./album.html">ALBUM</a></li>
+               <li><a href="./album.html" id="this">ALBUM</a></li>
                <li><a href="./songs.html">SONGS</a></li>
-               <li><a href="./index.html">ART</a></li>
-               <li><a href="./index.html">MEMBERS</a></li>
+               <li><a href="./art.html">ART</a></li>
+               <li><a href="./members.html">MEMBERS</a></li>
           </ul>
-          
-          
           <span id="lefttxt">
                     첫 번째 앨범이 인간으로서의 소명을 다하지<br>
                     못하는 것 같아 애타는 심정이 돋보였다면, <br>
@@ -33,6 +31,15 @@
           </span>
           <span id="buy"><a href="https://search.shopping.naver.com/search/all.nhn?where=all&frm=NVSCTAB&query=%ED%98%81%EC%98%A4+22">BUY ></a></span>
      </div>
+
+
+
+
+
+
+
+
+     <!--main-->
      <div id="main" class="section">
           <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
                     <source src="./img/gondry.mp4" type="video/mp4">
@@ -47,26 +54,42 @@
                </span>
                <span id="twotwo">22</span><br>
           </div>
-
           <span id="right-bottom">
                2015.05.28<br>
                warigari - hyuk oh 22
           </span>
      </div>
 
-     <div id="photo" class="section">
-               
+
+
+
+
+
+
+     <!--mamsking-->
+     <div id="photo" class="section"></div>
+     <div id = "ptext-box">
+          <h1 id="ptext-title">-<br>
+               존재성의 본질
+          </h1>
+          <span id="ptext"><br>
+               교묘하게 숨어서 그를 괴롭히던 죄책감이 한결 덜어진<br>
+               두 번째 앨범에서는 감성은 짙어지고 자유로움은 더욱 선명해졌다.<br>
+               첫 앨범이 결과물을 내놓는 것 자체에 집중했던 것이라면,<br>
+               두 번째 EP 앨범 [22]에서는 고민에 고민을 더해<br>
+               음악적 퀄리티를 더욱 높이고자 했다.<br><br>
+               프로페셔널한 작업이 가능한 환경이 주어진 지금, 이전에는 시도하지 못한<br>
+               새로운 음악적 테크닉에 대한 실험이 크게 반영된 동시에,<br>
+               과장된 리버브와 이펙트를 과감히 덜어내고 오혁 본인 목소리의<br>
+               본연적인 매력을 디테일하게 살리는 데에 공을 들였다.
+          </span>
      </div>
-     <!--
-     <span id="ptext">
-               우리는 어떤 꿈을 가지고 여기에 모여 사는가.<br>
-               비록 곰팡내 나는 원룸 한구석에서 동물원 우리에<br>
-               갇힌 개미핥기처럼 몸을 웅크리고 살지라도 각자 <br>
-               소망하는 바는 햇빛 가득 내리쬐는 더운 날의 갑작스런<br>
-               소나기처럼 청량하기 그지없다.
-     </span>
-     -->
-     
+
+     <div id="cursor-bg">&nbsp;</div>
+     <div id="progress"><span>&nbsp;</span></div>
+
+     <script src = "./vendor/gsap/TweenMax.min.js"></script>
+     <script src="./js/mouse.js"></script>
 
 
 
